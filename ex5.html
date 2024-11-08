@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../src/tailwindlib.js"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+
+        @layer components{
+          .picture-frame{
+            @apply h-[125px] w-[125px] rounded-full ring-2 ring-yellow-500
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="flex justify-center h-screen items-center">
+        <img
+          class="picture-frame"
+          src="../images/bee.png"
+          alt=""
+        />
+        <img
+          class="picture-frame"
+          src="../images/bee.png"
+          alt=""
+        />
+        <img
+          class="picture-frame"
+          src="../images/bee.png"
+          alt=""
+        />
+        <img
+          class="picture-frame"
+          src="../images/bee.png"
+          alt=""
+        />
+    </div>
+</body>
+</html>

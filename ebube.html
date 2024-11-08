@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @layer utilities {
+          .nav-text{
+            right: 3%;
+          }
+          .nav-button{
+            margin-top: 0.75rem;
+          }
+          .nav-item:hover{
+            text-decoration: none;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="h-16 w-full bg-slate-400 flex">
+        <img src="../images/logo.jpg" class="w-16 h-16" alt="logo"/>
+        <div class="w3-right space-x-2 absolute nav-text">
+            <a href="#" class="text-blue-500 nav-item">Home</a>
+            <a href="#" class="text-blue-500 nav-item">About</a>
+            <a href="#" class="text-blue-500 nav-item">Testimonials</a>
+            <button class="w-22 h-10 ring-1 ring-blue-500 py-2 px-2 rounded-xl nav-button">Contact Us</button>
+        </div>
+    </div>
+</body>
+</html>

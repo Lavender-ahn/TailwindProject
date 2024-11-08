@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../src/tailwindlib.js"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+
+      </style>
+</head>
+<body>
+    <div class="grid lg:grid-cols-2 gap-x-9">
+        <figure class="mbg-slate-100 rounded-xl p-8 dark:bg-slate-100 ring-1 ring-slate-600 m-12">
+            <img class="w-[200px] h-[200px] rounded-full mx-auto" src="../images/ttpd.jpeg"
+            width="384" height="512"/>
+            <div class="pt-6 text-center space-y-4">
+                <blockquote>
+                    <p class="text-lg font-medium text-slate-500">
+                        "So tell me everything is not about me, but what if it is? 
+                         Then say they didn't it to hurt me, but WHAT IF THEY DID?!"
+                    </p>
+                </blockquote>
+                <figcaption class="font-medium">
+                    <div class="text-slate-700 dark:text-slate-600 text-3xl font-medium">
+                        Taylor Swift
+                    </div>
+                    <div class="text-slate-700 dark:text-slate-500">
+                        World Wide Popstar
+                </div>
+                </figcaption>
+            </div>
+        </figure>
+
+        <figure class="mbg-slate-100 rounded-xl p-8 dark:bg-slate-100 ring-1 ring-slate-600 m-12">
+            <img class="w-[200px] h-[200px] rounded-full mx-auto" src="../images/ttpd.jpeg"
+            width="384" height="512"/>
+            <div class="pt-6 text-center space-y-4">
+                <blockquote>
+                    <p class="text-lg font-medium text-slate-500">
+                        "So tell me everything is not about me, but what if it is? 
+                        Then say they didn't it to hurt me, but WHAT IF THEY DID?!"
+                    </p>
+                </blockquote>
+                <figcaption class="font-medium">
+                    <div class="text-sky-500 dark:text-slate-600 text-3xl font-medium">
+                        Taylor Swift
+                    </div>
+                    <div class="text-slate-700 dark:text-slate-500">
+                        World Wide Popstar
+                </div>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+</body>
+</html>
